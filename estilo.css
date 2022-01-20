@@ -1,0 +1,390 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+#searchInput:focus {
+    text-align: left;
+}
+
+.rigth {
+    height: 100%;
+    width: 100%;
+}
+
+.left {
+    background-color: rgb(42, 47, 50);
+    height: 100%;
+    width: 40%;
+    display: inline;
+    border-right: 1px solid rgba(255, 255, 255, 0.111);
+}
+
+.info {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileOrGPic {
+    padding: 15px;
+}
+
+.profileOrGPic #topImage {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.profileOrGPic:hover {
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+}
+
+.options div {
+    height: 100%;
+    width: 50px;
+}
+
+.options:hover {
+    cursor: pointer;
+}
+
+.inputLocation {
+    background-color: rgb(19, 28, 33);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.111);
+}
+
+.inputAndEmote {
+    background-color: rgb(50, 55, 57);
+    width: 90%;
+    height: 25px;
+    display: flex;
+    justify-content: right;
+    border: 3px solid rgba(19, 28, 33, 0.076);
+    border-radius: 20px;
+    position: relative;
+}
+
+.inputAndEmote span {
+    left: 3%;
+    padding-right: 10px;
+    transform-origin: center;
+    transition: transform 0.3s, visibility 0.2s, opacity 0.1s;
+    position: absolute;
+}
+
+#searchInput {
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(50, 55, 57);
+    color: rgb(135, 136, 133);
+    width: 85%;
+}
+
+.recentChats {
+    max-height: calc(100% - 96px);
+    width: 100%;
+    background-color: rgb(19, 28, 33);
+    align-items: center;
+    z-index: 1;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.recentChats:hover {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10 px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(19, 28, 33);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255, 0.111);
+    border-radius: 10px;
+}
+
+#archiveMessages {
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#archiveMessages .emotes {
+    height: 100%;
+    padding-left: 6%;
+}
+
+.textsChats {
+    min-height: 50px;
+    width: 100%;
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    color: rgb(223, 224, 225);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.111);
+}
+
+.groupCaracteristics {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    position: relative;
+}
+
+.groupCaracteristics:hover {
+    background-color: rgb(50, 55, 57);
+}
+
+.profileOrGPic .groupImage {
+    height: 49px;
+    width: 49px;
+    border-radius: 100%;
+}
+
+.groupNandDSide {
+    color: rgb(164, 171, 177);
+    width: 80%;
+    font-weight: bold;
+}
+
+.groupNameSide {
+    font-size: 15px;
+}
+
+.groupDescriptionSide {
+    font-size: 13px;
+}
+
+.emotesGroup {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.emotesAndHours {
+    padding-right: 20px;
+}
+
+.NDandE {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.111);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hours {
+    color: rgb(0, 175, 156);
+    font-size: 12px;
+    text-align: end;
+}
+
+.nonReadMessages {
+    background-color: rgb(0, 175, 156);
+    height: 19px;
+    width: 19px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+/*Rigth elements*/
+
+.groupInfo {
+    background-color: rgb(42, 47, 50);
+    color: rgb(205, 212, 216);
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.groupButtons {
+    display: flex;
+}
+
+.groupButtons div {
+    height: 100%;
+    width: 50px;
+}
+
+.groupButtons:hover {
+    cursor: pointer;
+}
+
+.groupNandD {
+    height: 100%;
+    width: 80%;
+    display: inline;
+}
+
+.groupNandD:hover {
+    cursor: pointer;
+}
+
+.groupName {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 15;
+    font-weight: bold;
+}
+
+.groupDescription {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 12px;
+    color: rgb(130, 134, 137);
+}
+
+.restRigth {
+    height: calc(100% - 55px);
+    display: block;
+    background-image: url("./imagensZap/background.jpg");
+    position: relative;
+}
+
+.messageArea {
+    position: relative;
+    display: flex;
+    height: calc(100% - 52px);
+    width: 100%;
+    overflow-y: auto;
+    flex-direction: column-reverse;
+}
+
+.messageF1 {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    position: inherit;
+}
+
+.messageText .hours {
+    width: 100%;
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(190, 198, 199);
+}
+
+.hours span {
+    padding-right: 3px;
+}
+
+.messageF1 .messageText {
+    display: inline;
+    position: relative;
+    padding: 10px;
+    width: 55%;
+    background-color: rgb(5, 97, 98);
+    border-radius: 15px;
+    color: rgb(226, 232, 233);
+    font-size: 14px;
+    margin-right: 5%;
+}
+
+.messageF2 {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    position: inherit;
+}
+
+.messageF2 .messageText {
+    display: inline;
+    position: relative;
+    padding: 10px;
+    width: 55%;
+    background-color: rgb(38, 45, 49);
+    border-radius: 15px;
+    color: rgb(226, 232, 233);
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+.messageF1:first-child {
+    padding-bottom: 15px;
+}
+
+.sendMensages {
+    height: 52px;
+    width: 100%;
+    background-color: rgb(30, 36, 40);
+    justify-content: space-between;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.emotes {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emotes:hover {
+    cursor: pointer;
+}
+
+.inputMessage {
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#messageInput {
+    border: 3px solid rgba(19, 28, 33, 0.076);
+    border-radius: 20px;
+    width: 100%;
+    height: 37px;
+    background-color: rgb(50, 55, 57);
+    color: rgb(135, 136, 133);
+    font-size: medium;
+    padding: 15px;
+}
+
+.microAndMessage {
+    padding-right: 15px;
+}
